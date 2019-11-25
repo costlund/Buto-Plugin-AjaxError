@@ -1,11 +1,15 @@
 # Buto-Plugin-AjaxError
-
 Show an alert when there is an ajax error. Push to Slack as an option.
-
-## Settings
-
-### Slack
-Param slack is optional.
+## Usage
+Inside html tag on a page.
+```
+type: widget
+data:
+  plugin: ajax/error
+  method: include
+```
+## Slack
+Post to Slack by setting up page /ajax_error/*.
 ```
 plugin_modules:
   ajax_error:
@@ -17,15 +21,4 @@ In ajax_error_slack.yml
 ```
 webhook: _webhook_url_
 group: _name_of_group_
-```
-
-
-
-## Usage
-Inside html tag on a page.
-```
-type: widget
-data:
-  plugin: ajax/error
-  method: include
 ```
