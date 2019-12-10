@@ -1,5 +1,9 @@
-version: 1.0.0
+version: 1.1.0
 history:
+  1.1.0:
+    date: '2019-12-10'
+    title: Alert connection
+    description: Alert if there seems to be no internet connection.
   1.0.0:
     date: '2019-11-25'
     title: 'First version.'

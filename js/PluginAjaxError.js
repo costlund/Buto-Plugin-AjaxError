@@ -13,9 +13,21 @@ function PluginAjaxError(){
       }
     }
     /**
+     * No action there is this plugin request
+     */
+    if(url=='/ajax_error/push'){
+      return null;
+    }
+    /**
+     * Handle responseText
+     */
+    if(typeof responseText==='undefined'){
+      responseText = 'Seems like there is no internet connection';
+    }
+    /**
      * Alert
      */
-    alert("PluginAjaxError says: Error requesting page " + url + " ("+responseText+")");
+    alert("PluginAjaxError says: Error requesting page " + url + " ("+responseText+").");
   }
 }
 /**
