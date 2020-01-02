@@ -10,7 +10,7 @@ class PluginAjaxError{
      * Send
      */
     if($settings->get('slack') && wfUser::hasRole('client')){
-      $text = wfHelp::getHttpAdress().' says there was error '.wfRequest::get('responseText', '(responseText missing)').' when trying to load page '.wfRequest::get('url', '(url missing)').' for user '.wfUser::getSession()->get('user_id').'!';
+      $text = 'PluginAjaxError says: '.wfRequest::get('responseText', '(responseText missing)').', page '.wfRequest::get('url', '(url missing)').', user '.wfUser::getSession()->get('user_id').', host '.wfHelp::getHttpAdress().'!';
       wfPlugin::includeonce('slack/webhook_v1');
       $slack_webhook = new PluginSlackWebhook_v1();
       $slack_webhook->url = $settings->get('slack/webhook');
