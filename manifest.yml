@@ -2,12 +2,12 @@ version: 1.2.0
 history:
   1.2.0:
     date: '2020-01-02'
-    title: Slack message
-    description: Improved Slack message.
+    title: 'Slack message'
+    description: 'Improved Slack message.'
   1.1.0:
     date: '2019-12-10'
-    title: Alert connection
-    description: Alert if there seems to be no internet connection.
+    title: 'Alert connection'
+    description: 'Alert if there seems to be no internet connection.'
   1.0.0:
     date: '2019-11-25'
     title: 'First version.'
@@ -18,7 +18,7 @@ plugin:
     version: '1.0'
   -
     name: wf/yml
-    version: '1.2'
+    version: 1.2.2
 sys:
   -
     name: mercury
