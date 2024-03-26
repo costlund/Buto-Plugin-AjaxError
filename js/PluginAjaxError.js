@@ -27,7 +27,9 @@ function PluginAjaxError(){
     /**
      * Alert
      */
-    alert("PluginAjaxError says: Error requesting page " + url + " ("+responseText+").");
+    const d = new Date();
+    let time_string = d.toTimeString();
+    alert("PluginAjaxError says: Error requesting page " + url + " ("+responseText+"). Time "+time_string+".");
   }
 }
 /**
