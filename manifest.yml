@@ -1,8 +1,12 @@
-version: 1.2.4
+version: 1.2.5
 history:
+  1.2.5:
+    date: '2025-09-04'
+    title: License
+    description: 'Add license file.'
   1.2.4:
     date: '2024-03-26'
-    title: Error text 
+    title: 'Error text'
     description: 'Add time to error text.'
   1.2.3:
     date: '2023-09-11'
